@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body{
     display: flex;
     background-color: #81959D;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .calculadora{
-    margin-top: 10vh;
+    margin-top: 1vh;
     width: 30vw;
-    height: 80vh;
+    height: 95vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -33,31 +33,38 @@ body{
     border-radius: 30px;
     background-color: #DADFBA;
     color: #A8AB83;
+    font-size: x-large;
+    padding-left: 25vw;
 }
 
 .btn-numero{
-    height: 4vw;
-    width: 4vw;
+    height: 5vw;
+    width: 5vw;
     background-color: #A8AB83;
     border-color: #DADFBA;
     border-radius: 20px;
     color: #DADFBA;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
 }
 
 .btn-operacao{
-    height: 4vw;
-    width: 4vw;
+    height: 5vw;
+    width: 5vw;
     background-color: #DADFBA;
     border-color: #DADFBA;
     border-radius: 20px;
     color: #A8AB83;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
 }
 
 .flexgrow1{
-    width: 10vw;
-
+    flex-grow: 1;
+    margin: 0 1vw;
 }
 
 .flexgrow0{
-
+    flex-grow: 0;
+    margin: 0 1vw;
 }
