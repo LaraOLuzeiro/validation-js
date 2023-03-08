@@ -40,18 +40,19 @@ teclas.addEventListener('click', (event) => {
         if (operador == 'soma'){
             resultado = primeiroNumero + segundoNumero
         }
-        if (operador == 'sub'){
+        else if (operador == 'sub'){
             resultado = primeiroNumero - segundoNumero
         }
-        if (operador == 'mult'){
+        else if (operador == 'mult'){
             resultado = primeiroNumero * segundoNumero
         }
-        if (operador == 'div'){
+        else if (operador == 'div'){
             resultado = primeiroNumero / segundoNumero
         }
 
-        if (resultado % 1 > 10){
-            visor.textContent = resultado.toFixed(10)
+        let aux = resultado
+        if (aux.toString().length > 15){
+            visor.textContent = resultado.toFixed(8)
         }
         else {
             visor.textContent = resultado
@@ -62,7 +63,12 @@ teclas.addEventListener('click', (event) => {
         visor.textContent = ''
     }
     else if (tipoTecla == 'ponto'){
-        visor.textContent = '0' + '.'
+        if (visor.textContent == ''){
+            visor.textContent = '0' + '.'
+        }
+        else {
+            visor.textContent += '.'
+        }
     }
 
     teclas.dataset.tipoTeclaAnterior = tipoTecla
