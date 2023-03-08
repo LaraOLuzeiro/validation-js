@@ -8,9 +8,8 @@ body{
 }
 
 .calculadora{
-    margin-top: 1vh;
     width: 30vw;
-    height: 95vh;
+    height: 98vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,13 +27,16 @@ body{
 
 #visor{
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     margin: 20px;
     border-radius: 30px;
+    padding-right: 2vw;
     background-color: #DADFBA;
     color: #A8AB83;
-    font-size: x-large;
-    padding-left: 25vw;
+    font-size: xxx-large;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .btn-numero{
@@ -46,6 +48,9 @@ body{
     color: #DADFBA;
     font-family: 'Oswald', sans-serif;
     font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-operacao{
@@ -56,7 +61,22 @@ body{
     border-radius: 20px;
     color: #A8AB83;
     font-family: 'Oswald', sans-serif;
-    font-size: x-large;
+    font-size: xxx-large;
+    align-content: center;
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-numero:hover{
+    background-color: #BCBF93;
+    color: #DADFBA;
+    cursor: pointer;
+}
+
+.btn-operacao:hover{
+    cursor: pointer;
+    background-color: #CCD1A7;
 }
 
 .flexgrow1{
@@ -66,5 +86,6 @@ body{
 
 .flexgrow0{
     flex-grow: 0;
-    margin: 0 1vw;
+    margin: 0 1.6vw 0 0;
+    font-size: xxx-large;
 }

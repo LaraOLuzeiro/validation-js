@@ -9,34 +9,35 @@
 </head>
 <body>
     <div class="calculadora">
-        <div id="visor">0</div>
+        <div id="visor"></div>
         <div id="linha5" class="linhas">
-            <button class="btn-operacao flexgrow1">CL</button>
-            <button class="btn-operacao flexgrow1">=</button>
+            <button data-tipo-tecla="clear" class="btn-operacao flexgrow1">CL</button>
+            <button data-tipo-tecla="igual" class="btn-operacao flexgrow1">=</button>
         </div>
         <div id="linha1" class="linhas">
-            <button class="btn-numero">7</button>
-            <button class="btn-numero">8</button>
-            <button class="btn-numero">9</button>
-            <button class="btn-operacao">+</button>
+            <button data-tipo-tecla="numero" class="btn-numero">7</button>
+            <button data-tipo-tecla="numero" class="btn-numero">8</button>
+            <button data-tipo-tecla="numero" class="btn-numero">9</button>
+            <button data-tipo-tecla="operacao" data-tecla="soma" class="btn-operacao">+</button>
         </div>
         <div id="linha2" class="linhas"> 
-            <button class="btn-numero">4</button>
-            <button class="btn-numero">5</button>
-            <button class="btn-numero">6</button>
-            <button class="btn-operacao">-</button>
+            <button data-tipo-tecla="numero" class="btn-numero">4</button>
+            <button data-tipo-tecla="numero" class="btn-numero">5</button>
+            <button data-tipo-tecla="numero" class="btn-numero">6</button>
+            <button data-tipo-tecla="operacao" data-tecla="sub" class="btn-operacao">-</button>
         </div>
         <div id="linha3" class="linhas">
-            <button class="btn-numero">1</button>
-            <button class="btn-numero">2</button>
-            <button class="btn-numero">3</button>
-            <button class="btn-operacao">x</button>
+            <button data-tipo-tecla="numero" class="btn-numero">1</button>
+            <button data-tipo-tecla="numero" class="btn-numero">2</button>
+            <button data-tipo-tecla="numero" class="btn-numero">3</button>
+            <button data-tipo-tecla="operacao" data-tecla="mult" class="btn-operacao">&times</button>
         </div>
         <div id="linha4" class="linhas">
-            <button class="btn-numero flexgrow1">0</button>
-            <button class="btn-numero flexgrow0">.</button>
-            <button class="btn-operacao flexgrow0">/</button>
+            <button data-tipo-tecla="numero" class="btn-numero flexgrow1">0</button>
+            <button data-tipo-tecla="ponto" class="btn-numero flexgrow0">.</button>
+            <button data-tipo-tecla="operacao" data-tecla="div" class="btn-operacao flexgrow0">÷</button>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
