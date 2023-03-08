@@ -51,10 +51,10 @@ teclas.addEventListener('click', (event) => {
         }
 
         if (resultado % 1 > 10){
-            visor.textContent = resultado
+            visor.textContent = resultado.toFixed(10)
         }
         else {
-            visor.textContent = resultado.toFixed(10)
+            visor.textContent = resultado
         }
 
     }
